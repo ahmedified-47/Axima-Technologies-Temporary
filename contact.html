@@ -29,6 +29,15 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+<script src="./js/contact.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("tKgzkB1bx1YmYVOZB");
+   })();
+</script>
 </head>
 <body class="animsition">
 	
@@ -262,28 +271,28 @@
 						</h4>
 
 						<div class="bor8 m-b-20 how-pos4-parent">
-							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="firstName" placeholder="Your First Name">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" id="first_Name" type="text" name="firstName" placeholder="Your First Name">
 						</div>
 
 						<div class="bor8 m-b-20 how-pos4-parent">
-							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="lastName" placeholder="Your Last Name">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" id="last_Name" type="text" name="lastName" placeholder="Your Last Name">
 						</div>
 
 						<div class="bor8 m-b-20 how-pos4-parent">
-							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Your Email Address">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" id="email" type="text" name="email" placeholder="Your Email Address">
 							<img class="how-pos4 pointer-none" src="images/icons/icon-email.png" alt="ICON">
 						</div>
 
 						<div class="bor8 m-b-20 how-pos4-parent">
-							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="number" placeholder="Your Best Contact Number">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" id="phone_number" type="text" name="number" placeholder="Your Best Contact Number">
 							<img class="how-pos4 pointer-none" src="images/icons/icon-email.png" alt="ICON">
 						</div>
 
 						<div class="bor8 m-b-30">
-							<textarea class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="msg" placeholder="How Can We Help?"></textarea>
+							<textarea class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" id="message" name="msg" placeholder="How Can We Help?"></textarea>
 						</div>
 
-						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
+						<button type="button" class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer" onclick="sendMail()">
 							Submit
 						</button>
 					</form>
@@ -347,9 +356,9 @@
 	
 	
 	<!-- Map -->
-	<div class="map">
+	<!-- <div class="map">
 		<div class="size-303" id="google_map" data-map-x="40.691446" data-map-y="-73.886787" data-pin="images/icons/pin.png" data-scrollwhell="0" data-draggable="1" data-zoom="11"></div>
-	</div>
+	</div> -->
 
 
 
